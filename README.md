@@ -14,5 +14,5 @@ for i in (range(timeSteps)):
   ...
 
 Book:
-Anderson, John David. Computational Fluid Dynamics. Colombia: McGraw-Hill Education, 1995.
+Anderson, John David. Computational Fluid Dynamics: The Basics with Applications. McGraw-Hill, 1995.
   
