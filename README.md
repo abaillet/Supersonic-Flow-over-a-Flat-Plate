@@ -6,4 +6,4 @@ for convergence in main.
 
 The meat of the code is in the MacCormack.py file, whcih contains all the functions for the program to integrate the PDEs. 
 
-There are some minor discrepancies in the graphs generated w.r.t to those in Anderson, but I think the discrepancy is smal enough to be neglected.
+There are some minor discrepancies in the graphs generated w.r.t to those in Anderson, but I think the discrepancy is small enough to be neglected.
