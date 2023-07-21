@@ -28,6 +28,7 @@ def main(timeSteps, MAX_TOL=1e-8):
     Re_L = setup.Re_L
 
     print(f"Reynolds number: {Re_L:.3e}")
+    print(f"M: {setup.M_inf}")
 
     prims = setup.prims
 
@@ -69,12 +70,12 @@ def main(timeSteps, MAX_TOL=1e-8):
     print(f"Percentage difference between mass flow in and mass flow out: {d_mdot:.3f}%")
     ylim = int(len(Y)//2) + 10
 
-    viz.plot_xprofile([pressure[0]/setup.p_inf], list(range(len(X[0]))), r"$P/P_\infty$", "Pressure along surface of plate")
+    viz.plot_xprofile([pressure[0]/setup.p_inf], list(range(len(X[0]))), r"$P/P_\infty$", "Pressure along surface of plate, M=4, Adiabatic Wall")
     viz.plot_map(pressure, X, Y, "Pressure [Pa]")
     viz.plot_map(M, X, Y, "M")
     viz.plot_map(u, X, Y, "u [m/s]")
     viz.plot_map(T, X, Y, "T [K]")
-    viz.plot_yprofile(T[:,-1]/setup.T_inf, Y[:,0], r"$T/T_\infty$", "Temperature distribution at trailing edge")
+    viz.plot_yprofile(T[:,-1]/setup.T_inf, Y[:,0], r"$T/T_\infty$", "Temperature distribution at trailing edge, M=4, Adiabatic Wall")
     # viz.plot_3D(pressure, X, Y, "Pressure [Pa]")
     # viz.plot_3D(M[:ylim], X[:ylim], Y[:ylim], "M")
     # slice_ = 5

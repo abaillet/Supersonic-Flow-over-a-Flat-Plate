@@ -44,7 +44,7 @@ def plot_xprofile(sol_arrays, x, ylabel=None, title=None, label_lst=None):
             plt.plot(x, arr, marker="o") 
     plt.xlabel("x")
     plt.ylabel(ylabel) 
-    # plt.ylim(0, 6)
+    plt.ylim(0, )
     plt.title(title)
     if label_lst:
         plt.legend()
