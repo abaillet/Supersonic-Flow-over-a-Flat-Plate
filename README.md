@@ -4,6 +4,6 @@ Solution (in Python) of supersonic flow over a flat plate based on the full Navi
 The setup of the problem can be found in the setup.py file. You can change some things, such as the time steps and tolerance
 for convergence in main. 
 
-The meat of the code is in the MacCormack.py file, whcih contains all the functions for the program to integrate the PDEs. 
+The meat of the code is in the MacCormack.py file, which contains all the functions for the program to integrate the PDEs. Almost the entire code (except for the time loop) is vectorized and I think the speed is ok.
 
-There are some minor discrepancies in the graphs generated w.r.t to those in Anderson, but I think the discrepancy is small enough to be neglected.
+There are some minor discrepancies in the graphs generated w.r.t to those in Anderson, but I think the discrepancy is small enough to be neglected. Also, I didn't code up the M=25 at 200,000 ft example, but you should be able to implement this easily in setup.py (or any other freestream conditions you want).
