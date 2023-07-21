@@ -1,5 +1,5 @@
 # Supersonic-Flow-over-a-Flat-Plate
-Solution of supersonic flow over a flat plate based on the full Navier-Stokes equations. Following Anderson's CFD chapter 10.
+Solution (in Python) of supersonic flow over a flat plate based on the full Navier-Stokes equations. Following Anderson's CFD chapter 10.
 
 The setup of the problem can be found in the setup.py file. You can change some things, such as the time steps and tolerance
 for convergence in main. 
