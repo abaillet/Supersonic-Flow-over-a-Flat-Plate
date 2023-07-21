@@ -12,3 +12,7 @@ Note that I used `tqdm` to display a progress bar. If you don't want to install 
 
 for i in (range(timeSteps)):
   ...
+
+Book:
+Anderson, John David. Computational Fluid Dynamics. Colombia: McGraw-Hill Education, 1995.
+  
